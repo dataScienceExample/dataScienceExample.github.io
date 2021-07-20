@@ -29,30 +29,35 @@
 
     <h1>Data Science 2021.</h1>
 
-    <p>Here is my first chart</p>
+    <h3>Covid-19</h3>
 
-<!--Example embed-->
-  <div class="chart">
-    <div id="firstChart">
-        <script src="chartCovid1.js"></script>
-      </script>
-    </div>
-  </div>
+    <p>The first chart tracks Covid-19 cases by UK region.</p>
 
-  <p>Here is my second chart</p>
+<!--Vaga embed, with notes for what is going on-->
+<div class="chart" id="firstChart">
 
-  <div class="chart">
-    <div id="secondChart">
-        <script src="chartLine1.js"></script>
-      </script>
-    </div>
-  </div>
+  <script>
+    // Following the script tag we are using Javascript.
+    // One way to tell is to see how comments work...
+    // First job is to set the chart as a JS variable:
+    var myChart1 = "chartCovid1.json";
+    // Now we simply insert it, using Vega's embed code:
+    // The embed function needs to be told the location, and what to put there. 
+    vegaEmbed('#firstChart', myChart1);
+  </script>
 
+</div>
 
+  <h3>Productivity puzzle</h3>
 
+  <p>My second chart looks at productivity in the UK</p>
 
-
-
+<div class="chart" id="secondChart">
+  <script>
+    var myChart1 = "chartLine1.json";
+    vegaEmbed('#secondChart', myChart1);
+  </script>
+</div>
     
 </body>
 
