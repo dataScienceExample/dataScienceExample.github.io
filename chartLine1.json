@@ -1,4 +1,3 @@
-var myChart2 =
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
 
@@ -16,7 +15,7 @@ var myChart2 =
   "data": {
     "url": "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/charts/ukMacro/GI4.DataHub.GrowthInnovationOutputperHour.csv"},
   "height": 300,
-  "width": 300,
+  "width": 345,
   "mark": {
     "type": "line",
     "point": false,
@@ -41,5 +40,4 @@ var myChart2 =
       "axis": {"grid": false}
     }
   }
-};
-vegaEmbed('#secondChart', myChart2, {"actions": false});
+}
